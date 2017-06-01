@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <!--<script>
+  window.alert("Hello World");
+</script>-->
+</head>
+
+
+
+<body>
+
+    <h1>JavaScript - Hello World</h1>
+
+    <!--
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<script>
+//  window.alert("Hello World");
+alert("Hello World in the body");
+</script>
+-->
+    <script>
+        var car = { //object
+
+            "model": "Audi", //quote around model, price to specify JSON object
+            "price": 25000,
+            "engine": "Petrol" //when building an object, the last element does not have a comma
+        }
+
+        //console.log(car.model);
+
+        var F1drivers = ["Lewis", "Kimi", "Alonso"]; //json is combination of js objects and arrays 
+        console.log(F1drivers[1]);
+
+        var F1 = {      //copied this starting from the {, leaving out var, till end of } and copied and pasted it in jsonformatter, and copied and pasted in brackets and saved with json extension in order to create own json file
+            "data": [{
+
+                    "car": "Mercedes",
+                    "driver": "Lewis",
+                    "wins": 2
+                }, //need a comma here since inside array we have two objects
+                {
+                    "circuit": "Monaco",
+                    "pointsystem": [{
+
+                        "first": 25,
+                        "secondplace": 18,
+                        "thirdplace": 15 //last element does not have a comma
+                    }],
+                    "teams": 11
+                }
+            ]
+        }
+        console.log(F1.data[1].pointsystem[0].thirdplace);
+        console.log(F1.data[1].teams);
+
+    </script>
+
+</body>
+
+</html>

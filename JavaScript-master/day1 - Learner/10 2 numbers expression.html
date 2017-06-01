@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+
+</form>
+<div><button id="button1">Number</button></div>
+<div id="demo"></div>
+
+<script>
+        document.getElementById("button1").onclick = function() {
+            
+         var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            
+            if(num1 >10 && num2>10)
+                {
+                document.getElementById("demo").innerHTML="both greater than 10";    
+                  
+                }
+            else if (num1>10 && num2<10){
+                
+                document.getElementById("demo").innerHTML="only first one is greater than 10";
+                
+            }
+            else if (num1<10 && num2>10){
+                
+                document.getElementById("demo").innerHTML="only second greater than 10";
+                
+            }
+            else{ document.getElementById("demo").innerHTML="both are less than 10"}
+            
+            
+            
+        }
+
+           /* var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;  
+    
+         if(num1||num2>10){
+             
+              document.getElementById("demo").innerHTML="Numbers are greater than 10";
+             
+         } else{ document.getElementById("demo").innerHTML="Numbers are greater than 10";}
+            */
+      
+ //|| num2>10 || (num1 && num2 >10)
+</script>
+
+</body>
+</html>
+

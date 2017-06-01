@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = Date();
+
+    var date =new Date();
+    var day = date.getDay();
+    var month=date.getMonth()+1;
+    var date1=date.getDate() +"/" +month+"/"+date.getFullYear();
+    var time=date.getHours()+ ":" +date.getMinutes();
+    
+    
+    switch (day) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+//}
+       
+    }
+    document.getElementById("demo").innerHTML = "Today is " +day + "<br>" +"Today's date is " +date1 +"<br>" + "current time is" +time;
+    
+</script>
+
+</body>
+</html>

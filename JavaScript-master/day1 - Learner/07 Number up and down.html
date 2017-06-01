@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Enter number below</p>
+<form>
+<input type="number" id="input1"/>
+
+</form>
+<div><button id="button1">Submit</button></div>
+<div id="output1"></div>
+<div id="output2"></div>
+
+<script>
+ 
+   /* document.getElementById("button1").onclick=function(){
+        
+        var myNum=document.getElementById("input1").value;
+       
+        
+    document.getElementById("output1").innerHTML=parseInt(myNum)+1;
+    document.getElementById("output2").innerHTML=parseInt(myNum)-1;
+        
+    }*/
+    
+    
+     document.getElementById("button1").onclick=function(){
+        
+        var myNum=parseInt(document.getElementById("input1").value);
+       
+        
+    document.getElementById("output1").innerHTML=--myNum;
+    document.getElementById("output2").innerHTML=myNum+2;
+        
+    }
+     
+     
+     
+      
+</script>
+
+</body>
+</html>
